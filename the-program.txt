@@ -1,1 +1,3 @@
 This is the program
+
+If fail is an option
