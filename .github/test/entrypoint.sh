@@ -2,4 +2,4 @@
 
 set -e
 
-cat the-program.txt | grep fail
+cat the-program.txt | grep fail
