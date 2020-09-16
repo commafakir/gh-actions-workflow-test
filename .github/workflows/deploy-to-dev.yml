@@ -5,6 +5,9 @@ on:
     branches:
       - 'master'
 
+env:
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_DEV }}
+
 jobs:
   test-and-deploy:
     name: Test and Deploy
@@ -14,3 +17,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Test
         uses: ./.github/test
+      - name: Deploy
+        uses: ./.github/deploy

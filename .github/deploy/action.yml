@@ -1,0 +1,5 @@
+name: 'Deploy application'
+description: 'Deploys application to given environment'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
