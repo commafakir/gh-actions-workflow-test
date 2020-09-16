@@ -1,4 +1,4 @@
-name: Deploys the application to test
+name: Deploys the application to production
 
 on:
   push:
