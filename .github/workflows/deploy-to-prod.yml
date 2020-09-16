@@ -1,0 +1,21 @@
+name: Deploys the application to test
+
+on:
+  push:
+    tags:
+      - prod/*
+
+env:
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_PROD }}
+
+jobs:
+  test-and-deploy:
+    name: Test and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test
+        uses: ./.github/test
+      - name: Deploy
+        uses: ./.github/deploy
