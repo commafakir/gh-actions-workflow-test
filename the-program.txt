@@ -1,2 +1,2 @@
-This is the program
+This is a better idea. Complete rewrite.
 
