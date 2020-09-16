@@ -2,4 +2,3 @@ This is the program
 
 I'm adding some more text, because this needs more text.
 
-fail
